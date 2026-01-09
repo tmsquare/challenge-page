@@ -1,78 +1,76 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Vertbaudet</title>
-		<link href="https://media.vertbaudet.fr/styles/vertbaudetfr/75132/global.css" rel="stylesheet" />
-		<style>
-			body {
-				background-color: #eef1f4;
-				position: relative;
-				min-height: 100%;
-				box-sizing: border-box;
-			}
+<!doctype html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Vertbaudet</title>
+	<link href="https://media.vertbaudet.fr/styles/vertbaudetfr/75132/global.css" rel="stylesheet" />
+	<style>
+		body {
+			background-color: #eef1f4;
+			position: relative;
+			min-height: 100%;
+			box-sizing: border-box;
+		}
 
-			.cloudflare-section {
-				margin: 40px auto 40px auto;
-				max-width: 340px;
-				height: fit-content;
-				display: flex;
-				flex-direction: column;
-				justify-content: space-between;
-				box-sizing: border-box;
-			}
+		.cloudflare-section {
+			margin: 40px auto 40px auto;
+			max-width: 340px;
+			height: fit-content;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			box-sizing: border-box;
+		}
 
-			.animation {
-				box-sizing: border-box;
-				width: 100%;
-				max-width: 300px;
-				display: flex;
-				margin: auto;
-			}
+		.animation {
+			box-sizing: border-box;
+			width: 100%;
+			max-width: 300px;
+			display: flex;
+			margin: auto;
+		}
 
-			.error-title {
-				text-align: center;
-				font: normal normal bold 20px/25px Muli;
-				letter-spacing: 0px;
-				color: #2d2a29;
-				margin-bottom: 10px;
-				box-sizing: border-box;
-			}
+		.error-title {
+			text-align: center;
+			font: normal normal bold 20px/25px Muli;
+			letter-spacing: 0px;
+			color: #2d2a29;
+			margin-bottom: 10px;
+			box-sizing: border-box;
+		}
 
-			.error-description {
-				text-align: center;
-				font: normal normal normal 16px/20px Muli;
-				letter-spacing: 0px;
-				color: #2d2a29;
-				max-width: 280px;
-				box-sizing: border-box;
-				margin: auto;
-			}
+		.error-description {
+			text-align: center;
+			font: normal normal normal 16px/20px Muli;
+			letter-spacing: 0px;
+			color: #2d2a29;
+			max-width: 280px;
+			box-sizing: border-box;
+			margin: auto;
+		}
 
-			.logo {
-				margin: 150px auto 20px auto;
-				display: block;
-				width: fit-content;
-				box-sizing: border-box;
-			}
-		</style>
-	</head>
-	<body id="cloudflare-challenge">
-		<section class="cloudflare-section">
-			<div class="top">
-				<img src="animation.gif" class="animation" />
-				<!-- <div class="error-code">1020</div> -->
-				<h2 class="error-title">::CAPTCHA_BOX::</h2>
-				<p class="error-description">Un petit instant… On s’assure que c’est bien vous pour vous offrir la meilleure expérience Vertbaudet !</p>
-			</div>
-			<!-- IMPORTANT : Cette div est obligatoire pour le captcha Cloudflare -->
-			<div id="cf-please-wait">
-				<div id="cf-captcha-bookmark"></div>
-			</div>
-			<img src="logo_vertbaudet.png" class="logo" />
-			<a href="https://deploy.workers.cloudflare.com/?url=<YOUR_REPO_URL>"><img src="https://deploy.workers.cloudflare.com/button" alt="Deploy to Cloudflare"/></a>
-		</section>
-	</body>
+		.logo {
+			margin: 150px auto 20px auto;
+			display: block;
+			width: fit-content;
+			box-sizing: border-box;
+		}
+	</style>
+</head>
+<body id="cloudflare-challenge">
+	<section class="cloudflare-section">
+		<div class="top">
+			<img src="animation.gif" class="animation" />
+			<!-- <div class="error-code">1020</div> -->
+			<h2 class="error-title">::CAPTCHA_BOX::</h2>
+			<p class="error-description">Un petit instant… On s’assure que c’est bien vous pour vous offrir la meilleure expérience Vertbaudet !</p>
+		</div>
+		<!-- IMPORTANT : Cette div est obligatoire pour le captcha Cloudflare -->
+		<div id="cf-please-wait">
+			<div id="cf-captcha-bookmark"></div>
+		</div>
+		<img src="logo_vertbaudet.png" class="logo" />
+	</section>
+</body>
 </html>
